@@ -1,49 +1,53 @@
 import React from 'react';
 
 //Third Party
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Entypo from 'react-native-vector-icons/Entypo';
+import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+//Routes
+import AppNavigation from './appNavigation';
 
 //Pages
-import Home from '@pages/Home';
-import Markets from '@pages/Markets';
-import About from '@pages/About';
+import Loading from '@pages/Loading';
+import MarketDetail from '@pages/MarketDetail';
+import Auth from '@pages/Auth';
 
-const RootNavigation = () => {
-  const Tab = createBottomTabNavigator();
+const RootNavigation = ({auth}: any) => {
+  const Stack = createNativeStackNavigator();
+
+  const MyTheme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      background: '#141c24',
+      card: '#292d39',
+      primary: '#fff',
+      text: '#818181',
+    },
+  };
 
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen
-          name="Home"
+    <NavigationContainer theme={MyTheme}>
+      <Stack.Navigator
+        initialRouteName={auth ? 'Loading' : 'Auth'}
+        screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Auth" component={Auth} />
+        <Stack.Screen name={'Loading'} component={Loading} />
+        <Stack.Screen name={'AppNavigation'} component={AppNavigation} />
+        <Stack.Screen
+          name={'MarketDetail'}
+          component={MarketDetail}
           options={{
-            tabBarIcon: ({color, size}) => {
-              return <Entypo name="home" color={color} size={size} />;
+            headerShown: true,
+            title: 'Emir Defteri',
+            headerBackTitle: '',
+            headerTitleStyle: {
+              fontSize: 18,
+              color: '#fff',
             },
           }}
-          component={Home}
         />
-        <Tab.Screen
-          name="Markets"
-          options={{
-            tabBarIcon: ({color, size}) => {
-              return <Entypo name="shop" color={color} size={size} />;
-            },
-          }}
-          component={Markets}
-        />
-        <Tab.Screen
-          name="About"
-          options={{
-            tabBarIcon: ({color, size}) => {
-              return <Entypo name="info" color={color} size={size} />;
-            },
-          }}
-          component={About}
-        />
-      </Tab.Navigator>
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

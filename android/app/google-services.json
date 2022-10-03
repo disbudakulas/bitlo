@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "228922030436",
+    "project_id": "bitlo-7a440",
+    "storage_bucket": "bitlo-7a440.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228922030436:android:ab8926eff8fe0906cde271",
+        "android_client_info": {
+          "package_name": "com.bitlo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228922030436-2l5s83u8auoojkb8mt2gv0nks0a3dvnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe5XERMS__avb2Cwx4HbZ49p1n8WxoLy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228922030436-2l5s83u8auoojkb8mt2gv0nks0a3dvnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

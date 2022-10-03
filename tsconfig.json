@@ -1,20 +1,21 @@
 // prettier-ignore
 {
-
+  
   "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
   "compilerOptions": {
+		"experimentalDecorators": true,
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Completeness */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
-    "baseUrl": "types",
-    "typeRoots": ["types"],
+    "baseUrl": ".",
     "paths": {
       "*": ["src/*"],
       "@pages/*": ["src/pages/*"],
       "@components/*": ["src/shared/components/*"],
       "@routes/*": ["src/shared/routes/*"],
       "@services/*": ["src/shared/services/*"],
+      "@assets/*": ["src/shared/assets/*"],
     },
   },
 }

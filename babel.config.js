@@ -1,6 +1,7 @@
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
+    'transform-decorators-legacy',
     [
       'module-resolver',
       {
@@ -11,6 +12,7 @@ module.exports = {
           '@components': './src/shared/components',
           '@routes': './src/shared/routes',
           '@services': './src/shared/services',
+          '@assets': './src/shared/assets',
         },
       },
     ],

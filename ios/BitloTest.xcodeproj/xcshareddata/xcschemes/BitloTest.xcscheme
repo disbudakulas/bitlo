@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "BitloTest.app"
-               BlueprintName = "BitloTest"
-               ReferencedContainer = "container:BitloTest.xcodeproj">
+               BuildableName = "Bitlo.app"
+               BlueprintName = "Bitlo"
+               ReferencedContainer = "container:Bitlo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "BitloTestTests.xctest"
-               BlueprintName = "BitloTestTests"
-               ReferencedContainer = "container:BitloTest.xcodeproj">
+               BuildableName = "BitloTests.xctest"
+               BlueprintName = "BitloTests"
+               ReferencedContainer = "container:Bitlo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "BitloTest.app"
-            BlueprintName = "BitloTest"
-            ReferencedContainer = "container:BitloTest.xcodeproj">
+            BuildableName = "Bitlo.app"
+            BlueprintName = "Bitlo"
+            ReferencedContainer = "container:Bitlo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "BitloTest.app"
-            BlueprintName = "BitloTest"
-            ReferencedContainer = "container:BitloTest.xcodeproj">
+            BuildableName = "Bitlo.app"
+            BlueprintName = "Bitlo"
+            ReferencedContainer = "container:Bitlo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
